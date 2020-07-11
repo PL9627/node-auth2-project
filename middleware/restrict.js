@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 
 const roles = ["normal", "admin"];
 
-function restrict() {
+function restrict(role) {
   return async (req, res, next) => {
     const authErr = {
       message: "Invalid Credentials",
