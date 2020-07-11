@@ -5,7 +5,7 @@ const cookieParser = require("cookie-parser");
 //const usersRouter = require("./users/users-router");
 
 const server = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 4000;
 
 server.use(helmet());
 server.use(cors());
